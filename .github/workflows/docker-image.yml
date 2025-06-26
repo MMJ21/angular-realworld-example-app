@@ -43,6 +43,6 @@ jobs:
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: index.docker.io/mmj21/conduitbackend
+          subject-name: index.docker.io/mmj21/conduitfrontend
           subject-digest: ${{ steps.push.outputs.digest }}
           push-to-registry: true
